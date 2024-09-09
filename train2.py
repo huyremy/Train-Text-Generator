@@ -2,7 +2,7 @@ import os
 import json
 import tensorflow as tf
 from transformers import GPT2Tokenizer, TFGPT2LMHeadModel
-
+# train kiểu tensorflow
 # Load the dataset
 with open("data_instruct_clean.json", "r") as f:
     dataset = json.load(f)
