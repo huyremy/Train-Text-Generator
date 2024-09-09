@@ -29,3 +29,7 @@ def generate_response(prompt):
     # Giải mã kết quả
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return response
+
+user_input = "Imagine yourself as a fairytale princess with magical powers"
+response = generate_response(user_input)
+print("Chatbot:", response)
