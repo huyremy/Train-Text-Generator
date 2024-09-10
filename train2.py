@@ -45,4 +45,4 @@ model.compile(optimizer=optimizer)
 model.fit(train_dataset, epochs=10)
 
 # Save the model
-model.save_pretrained("my_gpt2_model")
+model.save_weights("my_gpt2_model_weights.bin")
