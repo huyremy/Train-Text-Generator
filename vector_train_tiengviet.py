@@ -11,7 +11,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # Tải tập dữ liệu
 dataset = load_dataset("wanhin/VinAI_test")
 
-# Tải mô hình và tokenizer DialoGPT
 model_name = "HuyRemy/TiengViet"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name).to(device)  # Di chuyển mô hình lên GPU
